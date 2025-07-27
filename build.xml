@@ -1,0 +1,10 @@
+<project default="compile">
+<target name="compile">
+	<mkdir dir="out"/>
+	<copy todir="out">
+		<fileset dir="src"
+				 includes="**/*.txt"/>
+	</copy>
+	<javac target="8" srcdir="src" destdir="out"/>
+</target>
+</project>
